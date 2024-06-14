@@ -1,0 +1,24 @@
+GET http://localhost:8000/users/view
+
+###
+
+POST http://localhost:8000/users/add
+Content-Type: application/json
+
+{
+    "name": "Jeffrey",
+    "surname": "Epstein"
+}
+
+
+###
+PATCH http://localhost:8000/users/update/665847d1d9f85875dcd28bd3
+Content-Type: application/json
+
+{
+    "name": "Jeffrey",
+    "surname": "Epstein"
+}
+
+###
+DELETE http://localhost:8000/users/delete/665847d1d9f85875dcd28bd3
